@@ -1,2 +1,0 @@
-const s=()=>{console.log("fjdhjfd"),console.log("fjdhjfd")};s();const n=document.querySelector(".hero-list-img");console.log(n);const o=[1,2,3,4],e=["../src/images/dsdsdsd.jpg","../src/images/upload-16208490460.jpg","../src/images/krasnyj-kalifornijskij-rak-vneshnij-vid.jpg","../src/images/вуеппек.png"],c=[];for(var r=0;r<e.length;r+=1){var i=new Image;i.src=e[r],c[r]=i}(()=>{const s=o.map((s=>`<li class="item">\n\n     <img src="${c[0].src}" alt="">\n\n</li>`)).join("");n.insertAdjacentHTML("beforeend",s),console.log(c[0].src)})();
-//# sourceMappingURL=index.b8bb5008.js.map
