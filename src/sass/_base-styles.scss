@@ -57,9 +57,7 @@ html {
   overflow-y: scroll;
 }
 
-main {
-  flex-grow: 1;
-}
+
 
 @media screen and (min-width: 280px) {
   .container {
@@ -71,15 +69,16 @@ main {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
   }
 }

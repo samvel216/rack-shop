@@ -1,0 +1,107 @@
+.footer {
+    background-color: rgb(68, 68, 68);
+    padding: 30px;
+    width: 100%;
+}
+.logo-span {
+    color: white;
+}
+.footer-contacts-container {
+    text-align: center;
+    margin-bottom: 20px;
+}    
+.footer-contacts-list {
+    margin-top: 10px;
+    .item {
+        margin-bottom: 6px;
+    }
+    .link {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .mail-link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+        display: block;
+        color: #CECECE;
+        margin-top: 8px;
+    }
+}
+.footer-social-list {
+    display: flex;
+    flex-direction: column;
+    .item:first-child {
+        margin-bottom: 10px;
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: normal;
+        color: black;
+    }
+}
+.footer-social-icon {
+    display: inline-block;
+    fill: white;
+    width: 40px;
+    height: 40px;
+}
+.telegramm-icon {
+    fill: #2196F3;
+    margin-left: 10px;
+}
+.footer-social-btn {
+    padding: 3px 60px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+.instagram-icon {
+    fill:  rgb(68, 68, 68);
+    margin-left: 10px;
+}
+@media screen and (min-width: 768px) {  
+    .footer-contacts-container {
+        display: block;
+        text-align: center;
+    }
+    .footer-contacts-list {
+        margin-top: 10px;
+        .item {
+            margin-bottom: 10px;
+        }
+        .link {
+            font-size: 18px;
+        }
+        .mail-link {
+            font-size: 18px;
+        }
+    }
+    .footer-social-btn {
+        padding: 5px 70px;
+    }
+    .footer-social-list {
+        flex-direction: row;
+        justify-content: center;
+        .item {
+            margin-right: 20px;
+        }
+        .item:last-child {
+            margin-right: 0;
+        }
+        .link {
+            font-size: 20px;
+        }
+    }
+}

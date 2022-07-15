@@ -1,5 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
+.desctop-header-container {
+    display: none;
+}
 .base-header-container {
     display: flex;
     align-items: center;
@@ -37,6 +39,7 @@
     color: black;
 }
 .mobile-header-menu-container {
+    display: none;
     width: 100%;
     position: absolute;
     max-width: 480px;
@@ -44,7 +47,7 @@
     left: 0;
     top: 0;
     background-color: rgba(13, 11, 11, 0.9);
-    padding: 40px;
+    padding: 50px;
 }
 .mobile-header-close-button {
     position: absolute;
@@ -143,4 +146,65 @@
     position: absolute;
     right: -5;
     top: -5;
+  }
+
+  @media screen and (min-width: 768px) {
+    .header {
+        padding: 20px 0px;
+        margin-bottom: 10px;
+    }
+    .base-header-container {
+        display: none;
+    }
+    .desctop-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .desctop-header-basket-link {
+       text-decoration: none;
+       position: fixed;
+       bottom: 20px;
+       right: 5%;
+    }
+    .desctop-header-menu-btn {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        font-size: 20px;
+        text-align: left; 
+        line-height: 1.33;
+        background-color: #2196F3;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;      
+    }
+    .desctop-header-menu-icon {
+        fill: white;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .desctop-header-contacts-list {
+        display: flex;
+        align-items: center;
+        .item {
+            margin-right: 20px;
+        }
+        .item:last-child {
+            margin-right: 0px;
+        }
+        .link {
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            font-size: 16px;
+            text-align: left; 
+            line-height: 1.33;
+            color: black;
+        }
+    }
   }
