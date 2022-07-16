@@ -17,8 +17,12 @@ a {
   font-weight: 500;
   line-height: 1.33;
 }
+main {
+  border: 3px solid rgb(255, 136, 0);
+  border-bottom: none;
+  background-image: url(../images/imgonline-com-ua-Resize-lw6bAvM7Gjj.jpg);
+}
 body {
-  background-color: var(--main-bg);
   transition: 0.3s;
 }
 p,
@@ -77,7 +81,7 @@ html {
 @media screen and (min-width: 1200px) {
   .container {
     min-width: 1200px;
-    max-width: 1800px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
   }

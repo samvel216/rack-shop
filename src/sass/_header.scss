@@ -2,6 +2,12 @@
 .desctop-header-container {
     display: none;
 }
+.logo-img {
+    height: 200px;
+}
+.computer-header-container {
+    display: none;
+}
 .base-header-container {
     display: flex;
     align-items: center;
@@ -9,7 +15,11 @@
 }
 .header {
     padding: 10px 0;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #3b3a3a;
+    position: fixed;
+    top: 0;
+    background-color:rgb(0, 0, 0);
+    width: 100%;
 }
 .icon-basket {
     width: 50px;
@@ -21,7 +31,7 @@
     background-color: white;
 }
 .logo-link {
-    font-family: Raleway;
+    font-family: 'Edu SA Beginner', cursive;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -30,7 +40,7 @@
     color:  #2196F3;
 }
 .logo-span {
-    font-family: Oleo Script;
+    font-family: 'Edu SA Beginner', cursive;
     font-size: 24px;
     font-weight: 400;
     line-height: 33px;
@@ -65,7 +75,7 @@
 .mobile-header-nav-list {
     text-align: center;
     .header-btn {
-        font-family: Roboto;
+        font-family: 'Edu SA Beginner', cursive;
         font-weight: 400;
         font-size: 30px;
         letter-spacing: 0.02em;
@@ -91,6 +101,7 @@
         margin-bottom: 0;
     }
     .link {
+        font-family: 'Edu SA Beginner', cursive;
         font-weight: 400;
         letter-spacing: 0.02em;
         font-size: 20px;
@@ -113,6 +124,7 @@
         border: none;
     }
     .link {
+        font-family: 'Edu SA Beginner', cursive;
         font-weight: 400;
         letter-spacing: 0.02em;
         font-size: 14px;
@@ -175,7 +187,7 @@
         font-size: 20px;
         text-align: left; 
         line-height: 1.33;
-        background-color: #2196F3;
+        background-color: orange;
         color: white;
         border-radius: 5px;
         border: none;
@@ -208,3 +220,55 @@
         }
     }
   }
+  @media screen and (min-width: 1201px) {
+    .header {
+        padding: 25px 0px;
+        margin-bottom: 10px;
+    }
+    .mobile-header-menu-container {
+       display: none;
+    }
+    .desctop-header-container {
+        display: none;
+    }
+    .computer-header-container {
+        display: flex;
+        align-items: center;
+    }
+    .computer-header-nav-list {
+        display: flex;
+        align-items: center;
+        .link {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.03em;
+            line-height: 1.22;
+            color: black;
+            display: block;
+            padding: 20px 5px;
+        }
+        .item {
+            margin-left: 20px;
+        }
+        .item:first-child {
+            margin-left: 60px;
+        }
+    }
+    .computer-header-contacts-list {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        .link {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 18px;
+            line-height: 1.33;
+            color: black;
+        }
+        .item:first-child {
+            margin-right: 20px;
+        }
+
+    }
+   
+}
