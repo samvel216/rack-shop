@@ -20,10 +20,12 @@ a {
 main {
   border: 3px solid rgb(255, 136, 0);
   border-bottom: none;
-  background-image: url(../images/imgonline-com-ua-Resize-lw6bAvM7Gjj.jpg);
+  border-top: none;
+ 
 }
 body {
   transition: 0.3s;
+  background-image: url(../images/1626142249_12-kartinkin-com-p-chernii-fon-vertikalnii-krasivo-12.jpg);
 }
 p,
 h1,
@@ -84,5 +86,12 @@ html {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container {
+    min-width: 1800px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }

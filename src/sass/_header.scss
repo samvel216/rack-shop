@@ -3,7 +3,8 @@
     display: none;
 }
 .logo-img {
-    height: 200px;
+    height: auto;
+    width: 200px;
 }
 .computer-header-container {
     display: none;
@@ -15,49 +16,41 @@
 }
 .header {
     padding: 10px 0;
-    border-bottom: 1px solid #3b3a3a;
     position: fixed;
     top: 0;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0, 0.4);
     width: 100%;
-}
-.icon-basket {
-    width: 50px;
-    height: 50px;
 }
 .mobile-header-burger-btn {
     border: none;
     border-radius: 5px;
-    background-color: white;
+    background-color:rgb(0, 0, 0, 0);
 }
-.logo-link {
-    font-family: 'Edu SA Beginner', cursive;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color:  #2196F3;
+.icon-burger {
+    fill: #ff7d04;
+    width: 100px;
+    height: 50px;
 }
-.logo-span {
-    font-family: 'Edu SA Beginner', cursive;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: black;
+.header-bottom-arrow-icon {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.header-bottom-arrow-link {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
 }
 .mobile-header-menu-container {
-    display: none;
-    width: 100%;
     position: absolute;
-    max-width: 480px;
-    height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(13, 11, 11, 0.9);
+    width: 100%;
+    transform: translateY(-150%);
+    height: auto;
+    background-color: rgba(13, 11, 11, 0.6);
     padding: 50px;
+    transition: transform 500ms linear;
 }
 .mobile-header-close-button {
     position: absolute;
@@ -89,8 +82,32 @@
         margin-bottom: 20px;
     }
     .item:last-child {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
+}
+.mobile-header-basket-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.mobile-icon-basket {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+.mobile-header-basket-span {
+    position: absolute;
+    right: -5;
+    top: -5;
+    font-size: 13px;
+    color: #fafafa;
+    background-color: #ff7b00;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .mobile-header-contacts-list {
     text-align: center;
@@ -143,12 +160,12 @@
 .icon-basket {
     width: 50px;
     height: 50px;
-    fill: #808080;
+    fill: rgb(226, 224, 224);
   }
   .header-basket-span {
     font-size: 13px;
     color: #fafafa;
-    background-color: #da9836;
+    background-color: #ff7b00;
     width: 20px;
     height: 20px;
     display: flex;
@@ -162,7 +179,7 @@
 
   @media screen and (min-width: 768px) {
     .header {
-        padding: 20px 0px;
+        padding: 10px 0px;
         margin-bottom: 10px;
     }
     .base-header-container {
@@ -187,7 +204,7 @@
         font-size: 20px;
         text-align: left; 
         line-height: 1.33;
-        background-color: orange;
+        background-color: rgb(255, 94, 0);
         color: white;
         border-radius: 5px;
         border: none;
@@ -211,18 +228,18 @@
             margin-right: 0px;
         }
         .link {
+            font-family: 'Edu SA Beginner', cursive;
             font-weight: 400;
             letter-spacing: 0.02em;
             font-size: 16px;
             text-align: left; 
             line-height: 1.33;
-            color: black;
+            color: white;
         }
     }
   }
   @media screen and (min-width: 1201px) {
     .header {
-        padding: 25px 0px;
         margin-bottom: 10px;
     }
     .mobile-header-menu-container {
@@ -239,13 +256,14 @@
         display: flex;
         align-items: center;
         .link {
+            font-family: 'Edu SA Beginner', cursive;
             font-weight: 500;
             font-size: 18px;
             letter-spacing: 0.03em;
             line-height: 1.22;
-            color: black;
+            color: white;
             display: block;
-            padding: 20px 5px;
+            padding: 30px 5px;
         }
         .item {
             margin-left: 20px;
@@ -259,16 +277,68 @@
         display: flex;
         align-items: center;
         .link {
+            font-family: 'Edu SA Beginner', cursive;
             font-weight: 500;
             letter-spacing: 0.02em;
             font-size: 18px;
             line-height: 1.33;
-            color: black;
+            padding: 30px 5px;
+            color: white;
         }
         .item:first-child {
             margin-right: 20px;
         }
 
     }
-   
+    .computer-header-basket-link {
+        text-decoration: none;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+    }
+    .computer-icon-basket {
+        width: 80px;
+        height: 80px;
+        fill: rgb(226, 224, 224);
+      }
+      .computer-header-basket-span {
+        font-size: 18px;
+        color: #fafafa;
+        background-color: #ff7b00;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        right: -5;
+        top: -5;
+      }
+}
+@media screen and (min-width: 1801px) {
+    .computer-header-nav-list {
+        .link {
+            font-size: 20px;
+            line-height: 1.33;
+            padding: 35px 6px;
+        }
+        .item {
+            margin-left: 30px;
+        }
+        .item:first-child {
+            margin-left: 80px;
+        }
+    }
+    .computer-header-contacts-list {
+        .link {
+            font-size: 20px;
+            line-height: 1.33;
+            padding: 35px 6px;
+        }
+        .item:first-child {
+            margin-right: 30px;
+        }
+
+    }
 }
