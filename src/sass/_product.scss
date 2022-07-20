@@ -1,3 +1,156 @@
+
+.product-card-info-container {
+    background-color:rgba(0, 0, 0, 0.9);
+    border-radius: 30px;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 1;
+    height: 270%;
+    transform: translateX(-150%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: transform 250ms linear;
+}
+.product-card-info-text {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 340px;
+    text-align: center;
+}
+.product-size-title {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 1.33;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.product-size-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.product-size {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:rgba(255, 0, 0, 0.8);
+    width: 40px;
+    height: 40px;
+}
+.product-size:nth-child(2) {
+    margin: 0 20px;
+}
+.product-price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.product-price-container {
+    text-align: center;
+}
+.product-text-price {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+.product-card-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    height: 350px;
+    overflow: hidden;
+}
+.product-info-img {
+    height: 100%;
+}
+.product-price-container {
+    margin: 0 20px auto;
+}
+.product-basket-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.product-basket-input {
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    padding: 3px;
+    margin: 0 10px;
+}
+.product-basket-input-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.product-basket-btn {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    line-height: 1.22;
+    background-color: rgb(255, 72, 0);
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.product-close-container {
+    position: absolute;
+    bottom: 125px;
+    right: 0;
+    width: 5px;
+    height: 30%;
+    z-index: 2;
+    background-color: rgb(255, 72, 0);
+    border-radius: 30px;
+}
+
+.product-close-icon {
+    fill: #ffffff;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+}
+.product-close-link {
+    position: absolute;
+    background-color: rgb(255, 72, 0);
+    border-radius: 50%;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -400%;
+}
+
 .arrow-6 {
     display: flex;
     align-items: center;
@@ -71,6 +224,7 @@
 .product-popular-list {
     .item {
         margin-bottom: 20px;
+        position: relative;
     }
     .product-card-container {
         margin: 0 auto;
