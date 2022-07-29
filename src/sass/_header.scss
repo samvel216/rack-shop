@@ -1,28 +1,25 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.desctop-header-container {
-    display: none;
-}
-.header {
-    transition: transform 250ms linear;
-}
-.logo-img {
-    height: auto;
-    width: 200px;
-}
-.computer-header-container {
-    display: none;
-}
-.base-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
+/*Мобильня версия хедера*/
 .header {
     padding: 10px 0;
     position: fixed;
     top: 0;
     background-color:rgb(0, 0, 0, 0.4);
     width: 100%;
+}
+.header {
+    transition: transform 250ms linear;
+}
+
+.base-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img {
+    height: auto;
+    width: 200px;
 }
 .mobile-header-burger-btn {
     border: none;
@@ -34,16 +31,7 @@
     width: 100px;
     height: 50px;
 }
-.header-bottom-arrow-icon {
-    fill: white;
-    width: 30px;
-    height: 30px;
-}
-.header-bottom-arrow-link {
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-}
+
 .mobile-header-menu-container {
     position: absolute;
     left: 0;
@@ -54,20 +42,6 @@
     background-color: rgba(13, 11, 11, 0.6);
     padding: 50px;
     transition: transform 500ms linear;
-}
-.mobile-header-close-button {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    z-index: 3;
-}
-.mobile-header-close-icon {
-    fill: white;
-    width: 20px;
-    height: 20px;
 }
 .mobile-header-nav-list {
     text-align: center;
@@ -88,30 +62,6 @@
     .item:last-child {
         margin-bottom: 50px;
     }
-}
-.mobile-header-basket-link {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-.mobile-icon-basket {
-    width: 50px;
-    height: 50px;
-    fill: white;
-}
-.mobile-header-basket-span {
-    position: absolute;
-    right: -5;
-    top: -5;
-    font-size: 13px;
-    color: #fafafa;
-    background-color: #ff7b00;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
 }
 .mobile-header-contacts-list {
     text-align: center;
@@ -155,33 +105,99 @@
         
     }
 }
-.header-basket-link {
-    text-decoration: none;
+.mobile-header-close-button {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 15px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 3;
 }
-.icon-basket {
-    width: 50px;
-    height: 50px;
-    fill: rgb(226, 226, 224);
-  }
-  .header-basket-span {
-    font-size: 13px;
-    color: #fafafa;
-    background-color: #ff7b00;
+.mobile-header-close-icon {
+    fill: white;
     width: 20px;
     height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    right: -5;
-    top: -5;
-  }
+}
+
+/*Мобильня версия удаляющиеся елементы*/
+.desctop-header-container {
+    display: none;
+}
+.computer-header-container {
+    display: none;
+}
+
+/*Мобильня версия возможно ненужные елементы*/
+
+
+// .header-bottom-arrow-icon {
+//     fill: white;
+//     width: 30px;
+//     height: 30px;
+// }
+// .header-bottom-arrow-link {
+//     position: absolute;
+//     bottom: -25px;
+//     left: 50%;
+// }
+// .mobile-header-basket-link {
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+// }
+// .mobile-icon-basket {
+//     width: 50px;
+//     height: 50px;
+//     fill: white;
+// }
+// .mobile-header-basket-span {
+//     position: absolute;
+//     right: -5;
+//     top: -5;
+//     font-size: 13px;
+//     color: #fafafa;
+//     background-color: #ff7b00;
+//     width: 20px;
+//     height: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50%;
+// }
+
+// .header-basket-link {
+//     text-decoration: none;
+//     position: absolute;
+//     bottom: 20px;
+//     left: 20px;
+// }
+// .icon-basket {
+//     width: 50px;
+//     height: 50px;
+//     fill: rgb(226, 226, 224);
+//   }
+//   .header-basket-span {
+//     font-size: 13px;
+//     color: #fafafa;
+//     background-color: #ff7b00;
+//     width: 20px;
+//     height: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50%;
+//     position: absolute;
+//     right: -5;
+//     top: -5;
+//   }
+
+
+/*Планшетная версия хедера*/
 
   @media screen and (min-width: 768px) {
+
+    /*Изменяющиеся елементы из мобильной версии*/
     .header {
         padding: 10px 0px;
         margin-bottom: 10px;
@@ -189,16 +205,32 @@
     .base-header-container {
         display: none;
     }
+
+    /*Новые елементы планшетной версии*/
+
     .desctop-header-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .desctop-header-basket-link {
-       text-decoration: none;
-       position: fixed;
-       bottom: 20px;
-       right: 5%;
+    .desctop-header-contacts-list {
+        display: flex;
+        align-items: center;
+        .item {
+            margin-right: 20px;
+        }
+        .item:last-child {
+            margin-right: 0px;
+        }
+        .link {
+            font-family: 'Edu SA Beginner', cursive;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            font-size: 16px;
+            text-align: left; 
+            line-height: 1.33;
+            color: white;
+        }
     }
     .desctop-header-menu-btn {
         display: flex;
@@ -222,27 +254,19 @@
         height: 30px;
         margin-left: 10px;
     }
-    .desctop-header-contacts-list {
-        display: flex;
-        align-items: center;
-        .item {
-            margin-right: 20px;
-        }
-        .item:last-child {
-            margin-right: 0px;
-        }
-        .link {
-            font-family: 'Edu SA Beginner', cursive;
-            font-weight: 400;
-            letter-spacing: 0.02em;
-            font-size: 16px;
-            text-align: left; 
-            line-height: 1.33;
-            color: white;
-        }
-    }
+   
+        // .desctop-header-basket-link {
+    //    text-decoration: none;
+    //    position: fixed;
+    //    bottom: 20px;
+    //    right: 5%;
+    // }
+
   }
   @media screen and (min-width: 1201px) {
+
+    /*Изменяющиеся елементы из планшетной версии*/
+
     .header {
         margin-bottom: 10px;
     }
@@ -252,6 +276,9 @@
     .desctop-header-container {
         display: none;
     }
+
+    /*Новые елементы компьютерной версии*/
+
     .computer-header-container {
         display: flex;
         align-items: center;
@@ -294,31 +321,31 @@
         }
 
     }
-    .computer-header-basket-link {
-        text-decoration: none;
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-    }
-    .computer-icon-basket {
-        width: 80px;
-        height: 80px;
-        fill: rgb(216, 201, 67);
-      }
-      .computer-header-basket-span {
-        font-size: 18px;
-        color: #fafafa;
-        background-color: #ff7b00;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        position: absolute;
-        right: -5;
-        top: -5;
-      }
+    // .computer-header-basket-link {
+    //     text-decoration: none;
+    //     position: fixed;
+    //     bottom: 40px;
+    //     right: 40px;
+    // }
+    // .computer-icon-basket {
+    //     width: 80px;
+    //     height: 80px;
+    //     fill: rgb(216, 201, 67);
+    //   }
+    //   .computer-header-basket-span {
+    //     font-size: 18px;
+    //     color: #fafafa;
+    //     background-color: #ff7b00;
+    //     width: 30px;
+    //     height: 30px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     right: -5;
+    //     top: -5;
+    //   }
 }
 @media screen and (min-width: 1801px) {
     .computer-header-nav-list {

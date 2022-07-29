@@ -1,15 +1,18 @@
+/*Стили мобильного модального окна*/
+
 
 .product-card-info-container {
     background-color:rgba(0, 0, 0, 0.9);
     border-radius: 30px;
-    width: 100%;
+    width: 90%;
+    max-width: 440px;
     padding: 30px 50px;
     z-index: 1;
-    height: 270%;
-    transform: translateX(-150%);
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    height: 96%;
+    transform: translateX(-200%);
+    position: fixed;
+    top: 2%;
+    left: 50%;
     transition: transform 250ms linear;
 }
 .product-card-info-text {
@@ -20,8 +23,17 @@
     line-height: 1.33;
     color: #ffffff;
     margin-bottom: 20px;
-    margin-top: 340px;
+    margin-top: 20px;
     text-align: center;
+}
+
+/*Кнопки выбора размера для модального окна*/
+
+.product-size-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .product-size-title {
     font-family: 'Edu SA Beginner', cursive;
@@ -33,12 +45,6 @@
     margin-bottom: 5px;
     text-align: center;
 }
-.product-size-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 .product-size {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -47,12 +53,23 @@
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
-    background-color:rgba(255, 0, 0, 0.8);
+    background-color:rgb(255, 0, 0);
     width: 40px;
     height: 40px;
 }
+.product-size:hover,
+.product-size:focus {
+    color: rgb(255, 0, 0);
+    background-color:#ffffff;
+}
 .product-size:nth-child(2) {
     margin: 0 20px;
+}
+
+/*Стили отображения цены модального окна*/
+
+.product-price-container {
+    text-align: center;
 }
 .product-price {
     font-family: 'Roboto', sans-serif;
@@ -63,6 +80,7 @@
 }
 .product-price-container {
     text-align: center;
+    margin: 0 20px auto;
 }
 .product-text-price {
     font-family: 'Edu SA Beginner', cursive;
@@ -71,20 +89,28 @@
     color: #ffffff;
     text-align: center;
 }
+
+
 .product-card-img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+     position: absolute;
+     top: 0;
+     left: 0;
     border-radius: 30px;
-    height: 350px;
+    width:100%;
+    height: same-as-width;
+    max-height: 330px;
     overflow: hidden;
+    
 }
 .product-info-img {
     height: 100%;
 }
-.product-price-container {
-    margin: 0 20px auto;
+.product-card-img {
+    max-height: 250px;
 }
+
+/*Стили отображения корзины модального окна*/
+
 .product-basket-input-container {
     display: flex;
     align-items: center;
@@ -108,7 +134,7 @@
 }
 
 .product-basket-btn {
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 15px;
     letter-spacing: 0.03em;
@@ -123,6 +149,25 @@
     margin: 0 auto;
     margin-bottom: 30px;
 }
+.filler-container {
+    height: 300px;
+}
+/*Стили открытия  модального окна*/
+
+.product-modal-card-title {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 42px;
+    text-align: center;    
+    margin: 0 20px;
+    color: white;
+}
+
+
+/*Стили отображения кнопки закрытия модального окна*/
+
 .product-close-container {
     position: absolute;
     bottom: 125px;
@@ -150,6 +195,8 @@
     transform: translateY(-50%);
     right: -400%;
 }
+
+/*Украденые мною крутые стрелочки*/
 
 .arrow-6 {
     display: flex;
@@ -180,6 +227,8 @@
     animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
  
+/*Украденая мною крутая анимация для стрелочек*/
+
 @keyframes arrow-6-anim {
     0% {
         opacity: 1;
@@ -221,6 +270,7 @@
     margin: 0 20px;
     color: white;
 }
+
 .product-popular-list {
     .item {
         margin-bottom: 20px;
